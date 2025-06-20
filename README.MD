@@ -43,12 +43,15 @@ Each movie has the following fields:
    cd movies-api
 
 2. Install Dependencies:
+   ```bash
    npm install
 
 3. Configure your MongoDB connection string in server.js (replace with your credentials):
+   ```bash
    mongoose.connect('your-mongodb-connection-string', {...});
 
 4. Start the server:
+   ```bash
    node server.js
 
 The server will run at http://localhost:5000.
@@ -64,19 +67,29 @@ Open index.html in your browser or via Live Server extension.
 ### How to Interact with the API
 
 Sample Requests
-  🔹Get all movies:- curl http://localhost:5000/api/movies
+  🔹Get all movies:- 
+    ```bash
+    curl http://localhost:5000/api/movies
 
-  🔹Get movie by ID:- curl http://localhost:5000/api/movies/movies01
+  🔹Get movie by ID:- 
+    ```bash
+    curl http://localhost:5000/api/movies/movies01
 
-  🔹Add a new movie:- curl -X POST http://localhost:5000/api/movies \
+  🔹Add a new movie:- 
+  ```bash
+  curl -X POST http://localhost:5000/api/movies \
   -H "Content-Type: application/json" \
   -d '{"_id":"inception123","title":"Inception","director":"Christopher Nolan","releaseYear":2010,"genre":"Sci-Fi","rating":5}'
 
-  🔹Update a movie:- curl -X PUT http://localhost:5000/api/movies/inception123 \
+  🔹Update a movie:- 
+  ```bash
+  curl -X PUT http://localhost:5000/api/movies/inception123 \
   -H "Content-Type: application/json" \
   -d '{"rating":4}'
 
-  🔹Delete a movie:- curl -X DELETE http://localhost:5000/api/movies/movies01
+  🔹Delete a movie:- 
+    ```bash
+    curl -X DELETE http://localhost:5000/api/movies/movies01
 
 ## Notes:-
 
