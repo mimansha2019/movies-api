@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movies CRUD</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎬 Movie Manager</h1>
+
+  <form id="movieForm">
+  <input type="text" id="customId" placeholder="Custom Movie ID" />
+  <input type="text" id="title" placeholder="Title" required />
+  <input type="text" id="director" placeholder="Director" required />
+  <input type="number" id="releaseYear" placeholder="Release Year" required />
+  <input type="text" id="genre" placeholder="Genre" required />
+  <button type="submit">Add Movie</button>
+</form>
+
+  <h2>Movies</h2>
+  <div id="moviesContainer"></div>
+
+<h3>🔍 Get Movie by ID</h3>
+<input type="text" id="movieIdInput" placeholder="Enter Movie ID" />
+<button onclick="getMovieById()">Fetch Movie</button>
+
+<div id="movieResult"></div>
+
+<h3>🗑️ Delete Movie by ID</h3>
+<input type="text" id="deleteMovieIdInput" placeholder="Enter Movie ID" />
+<button onclick="deleteMovieById()">Delete Movie</button>
+<div id="deleteResult"></div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

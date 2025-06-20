@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+#movieResult{
+    margin-top: 20px;
+}
