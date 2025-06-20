@@ -13,8 +13,7 @@ Base URL: http://localhost:5000/api/movies
 - **Response:** Array of movie objects  
 
 ### Sample Response
-```json
-[
+   [
   {
     "_id": "inception123",
     "title": "Inception",
@@ -43,7 +42,7 @@ Base URL: http://localhost:5000/api/movies
 - **Response:** A single movie object or an error message if not found  
 
 ### Sample Response
-```json
+
 [
   {
     "_id": "inception123",
@@ -64,8 +63,8 @@ Base URL: http://localhost:5000/api/movies
 - **Description:** Add a new movie to the database
 - **Request Body:** JSON object with movie details  
 
-### Sample Succesful Response
-```json
+### Sample Successful Response
+
 [
  {
   "_id": "inception123",
@@ -88,7 +87,7 @@ Base URL: http://localhost:5000/api/movies
 - **Request Body:** JSON object with updated fields (any subset)  
 
 ### Request Body Example
-```json
+
 [
   {
   "title": "Inception Updated",
@@ -98,7 +97,7 @@ Base URL: http://localhost:5000/api/movies
 ]
 
 ### Sample Successful Response
-```json
+
 [
   {
   "_id": "inception123",
@@ -122,7 +121,7 @@ Base URL: http://localhost:5000/api/movies
 - **Response:** Confirmation message  
 
 ### Sample Response
-```json
+
 [
   {
   "message": "Movie deleted"
