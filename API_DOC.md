@@ -93,7 +93,6 @@ Base URL: http://localhost:5000/api/movies
   "title": "Inception Updated",
   "releaseYear": 2011
 }
-
 ]
 
 ### Sample Successful Response
